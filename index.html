@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saas application</title>
+
+    <style>
+        * {
+            text-decoration: none;
+
+        }
+
+        .navbar {
+            background-color: rgb(70, 6, 43);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .navdiv {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 35px;
+            font-weight: 600;
+            color: white;
+        }
+
+        li {
+            list-style: none;
+            display: inline-block;
+        }
+
+        li a {
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            margin-right: 25px;
+
+        }
+
+        button {
+            background-color: black;
+            margin-left: 10px;
+            border-radius: 10px;
+            width: 90px;
+        }
+
+        button a {
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        .hero {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            text-align: center;
+        }
+
+        .hero img {
+            width: 650px;
+            height: 350px;
+            border-radius: 30px;
+            margin-top: 30px;
+        }
+
+        .herotext {
+            margin-top: 150px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: large;
+            padding-left: 20px;
+            color: white;
+
+
+        }
+
+        .herotext button {
+            color: white;
+            background-color: rgb(70, 6, 43);
+            height: 30px;
+
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px 20px;
+        }
+
+        .feature {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .feature:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature h3 {
+            color:rgb(70, 6, 43) ;
+        }
+
+        .tools {
+      background: #eef2ff;
+      padding: 50px 20px;
+      text-align: center;
+    }
+    .tools h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: #333;
+    }
+    .tool-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .tool {
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .tool:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .tool h3 {
+      color: #4f46e5;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      background: black;
+      color: white;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+
+
+
+
+
+
+    </style>
+</head>
+
+<body style="background-color: #333;">
+    <nav class="navbar">
+        <div class="navdiv">
+            <div class="logo">Saas</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Services</a></li>
+                <button><a href="#">Sign In</a></button>
+                <button><a href="#">Sign up</a></button>
+
+            </ul>
+
+
+        </div>
+
+    </nav>
+
+    <!-- banner -->
+    <section class="hero">
+        <div class="herotext">
+            <h1>Grow Your Business with Our SaaS</h1>
+            <p>Simple, powerful, and affordable tools to manage your business online.
+                Your data deserves better than spreadsheets. HubSpot's free CRM unifies all your customer data on one
+                platform, with AI that makes it easy to understand. And unlike a free trial, it's 100% free with no
+                expiration date.
+            </p>
+            <button>Get free trail</button>
+        </div>
+
+        <img src="saas-concept-collage.jpg">
+
+    </section>
+
+    <section class="features">
+        <div class="feature">
+            <h3>🚀 Fast</h3>
+            <p>Boost productivity with lightning-fast tools.</p>
+        </div>
+        <div class="feature">
+            <h3>🔒 Secure</h3>
+            <p>Your data is safe with our top security.</p>
+        </div>
+        <div class="feature">
+            <h3>☁️ Cloud-Based</h3>
+            <p>Access your business anywhere, anytime.</p>
+        </div>
+    </section>
+
+    <section class="tools">
+        <h2>Our Tools</h2>
+        <div class="tool-cards">
+          <div class="tool">
+            <h3>📊 Analytics Tool</h3>
+            <p>Track performance and insights to grow your business smarter.</p>
+          </div>
+          <div class="tool">
+            <h3>🤝 Collaboration Tool</h3>
+            <p>Work together seamlessly with your team from anywhere.</p>
+          </div>
+          <div class="tool">
+            <h3>💳 Payment Tool</h3>
+            <p>Manage subscriptions and payments with ease and security.</p>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <p>&copy; 2025 My SaaS. All rights reserved.</p>
+      </footer>
+    
+
+
+
+
+
+</body>
+
+</html>
